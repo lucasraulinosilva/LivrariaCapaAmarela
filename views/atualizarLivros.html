@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria</title>
+    <link rel="icon" href="../imgs/open-book.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <nav class="navbar bg-body-terciary p-3">
+        <div class="container-fluid nav ms-5">
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                    <h1 class="fs-6"><a href="../index.html" class="nav-link">Home</a></h1>
+                </li>
+                <li class="nav-item">
+                    <h1 class="fs-6"><a href="listarLivros.html" class="nav-link">Listar livros</a></h1>
+                </li>
+                <li class="nav-item">
+                    <h1 class="fs-6"><a href="cadastrarLivros.html" class="nav-link">Cadastrar livros</a></h1>
+                </li>
+                <li class="nav-item">
+                    <h1 class="fs-6"><a href="deletarLivros.html" class="nav-link">Deletar livro</a></h1>
+                </li>
+                <li class="nav-item">
+                    <h1 class="fs-6"><a href="atualizarLivros.html" class="nav-link active fw-bold">Atualizar livro</a></h1>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container col-4 mt-5">
+        <form onsubmit="return false" action="">
+            <div class="form-floating mb-3">
+                <input type="text" id="idLivro" class="form-control">
+                <label for="idLivro">Id do livro</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" id="nomeLivro" class="form-control">
+                <label for="nomeLivro">Nome do livro</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" id="autorLivro" class="form-control">
+                <label for="autorLivro">Autor do livro</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" id="temaLivro" class="form-control">
+                <label for="temaLivro">Tema do livro</label>
+            </div>
+            <button class="btn btn-primary center rounded-pill p-2 ps-3 pe-3 fw-bold" id="atualizarLivro">Atualizar livro</button>
+            <div class="toast align-items-center text-bg-primary border-0 mt-4 container-fluid text-center" role="alert"
+                aria-live="assertive" aria-atomic="true" id="livroAtualizado">
+                <div class="d-flex">
+                    <div class="toast-body container-fluid fw-bold">
+                        Livro atualizado.
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="../scripts/atualizar.js"></script>
+</body>
+
+</html>

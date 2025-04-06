@@ -1,0 +1,25 @@
+nav a {
+    color: black !important;
+}
+
+.bloco1,
+nav {
+    background-color: #FFB433 !important;
+}
+
+.vejaMais,
+.vejaMais:hover,
+.vejaMais:active,
+button,
+button:hover,
+button:active {
+    background-color: #80CBC4 !important;
+    color: #FBF8EF !important;
+    border: 1px solid #80CBC4 !important;
+}
+
+.func {
+    text-decoration: underline #80CBC4 5px;
+}
+
+/* B4EBE6 */
