@@ -3,7 +3,8 @@ nav a {
 }
 
 .bloco1,
-nav {
+nav,
+.icone {
     background-color: #FFB433 !important;
 }
 
@@ -22,4 +23,22 @@ button:active {
     text-decoration: underline #80CBC4 5px;
 }
 
+.formulario {
+    height: 350px;
+}
+
 /* B4EBE6 */
+
+.bloco2 {
+    margin-top: 100px;
+    background-color: #80CBC4;
+}
+
+.bloco2 h2,
+.bloco2 p {
+    color: #FBF8EF;
+}
+
+.func2 {
+    text-decoration: underline #FFB433 5px;
+}

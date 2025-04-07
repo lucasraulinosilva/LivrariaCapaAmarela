@@ -21,7 +21,10 @@
 
     <nav class="navbar bg-body-terciary p-3">
         <div class="container-fluid nav ms-5">
-            <ul class="nav nav-underline">
+            <ul class="nav nav-underline d-flex align-items-center">
+                <nav class="navbar navbar-light bg-light icone">
+                    <img src="../imgs/open-book.png" alt="" width="40px">
+                  </nav>
                 <li class="nav-item">
                     <h1 class="fs-6"><a href="../index.html" class="nav-link">Home</a></h1>
                 </li>
@@ -41,7 +44,7 @@
         </div>
     </nav>
 
-    <div class="container col-4 mt-5">
+    <div class="container col-4 mt-5 formulario">
         <form onsubmit="return false" action="">
             <div class="form-floating mb-3">
                 <input type="text" id="idLivro" class="form-control">
@@ -69,6 +72,12 @@
                 </div>
             </div>
         </form>
+    </div>
+
+    <div class="container col-4 mt-5 text-center">
+        <h1 class="fw-bold func">Modo de uso</h1>
+        <img src="../imgs/atualizar.png" alt="" class="mx-auto d-block mb-4 mt-4" width="80px">
+        <p>Digite as informações a serem alteradas do livro, o id não pode ser alterado, e aperte o botão de Deletar livro, caso não saiba o id clique <a href="https://lucasraulinosilva.github.io/LivrariaCapaAmarela/views/listarLivros.html">aqui</a>.</p>
     </div>
 
     <script src="../scripts/atualizar.js"></script>
